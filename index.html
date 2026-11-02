@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopnest | Improve your Shopping Experience</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="w-full">
+        <div class="bg-black mx-auto text-[10px] sm:text-[14px] lg:text-[18px] text-white text-center">
+            <p>Free shipping on orders over $99 | Use code <span class="text-[#E85D3A]">SHOP20</span> for 20% off</p>
+        </div>
+
+        <!-- Navbar -->
+        <div class="max-w-7xl mx-auto flex justify-around px-5 items-center border-b border-gray-300">
+            <div class="flex items-center gap-2 shrink-0 my-3">
+                <img src="images/foot/logo-mark.png" alt="logo-mark" class="w-8 h-8 object-contain">
+                <h1 class="font-bold text-[18px] text-black">ShopNest</h1>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:block">
+                <ul class="flex items-center justify-between gap-5 xl:gap-10">
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">New Arrivals</a></li>
+                    <li class="text-[#E85D3A]"><a href="">Sale</a></li>
+                </ul>
+            </nav>
+            <!-- Icons -->
+            <div class="flex items-center gap-4 text-[18px] md:text-[20px] shrink-0 my-3">
+
+                <button aria-label="Account">
+                    <i class="fa-regular fa-circle-user"></i>
+                </button>
+
+                <!-- Cart -->
+                <button class="relative" aria-label="Cart, 3 items">
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                    <span
+                        class="absolute -top-2 -right-2 min-w-4 h-4 px-1 bg-[#E85D3A] rounded-full text-[10px] text-white flex items-center justify-center">
+                        3
+                    </span>
+                </button>
+
+                <!-- Mobile / Tablet Menu -->
+                <button class="lg:hidden ml-2" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+        <!-- Hero Section -->
+        <section class="w-full">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-10 pb-6 flex flex-col lg:flex-row gap-10">
+                <!-- Content Left -->
+                <div class="w-full lg:w-1/2 lg:flex flex-col justify-center">
+                    <p
+                        class="text-[#E85D3A] font-bold rounded-[20px] bg-[#FDF2F0] text-[12px] lg:text-[15px] px-2 w-fit mb-5">
+
+                        NEW COLLECTION 2026
+                    </p>
+                    <h1 class="font-bold text-4xl lg:text-5xl mb-6">
+                        Elevate Your Everyday Style
+                    </h1>
+                    <p class="text-gray-600 lg:text-[20px] mb-2">
+                        Discover the perfect blend of sustainable materials, thoughtful craftsmanship, and contemporary
+                        silhouettes designed to adapt seamlessly to your active life.
+                    </p>
+
+                    <div class="flex gap-5 mb-5">
+                        <button class="bg-[#E85D3A] text-white rounded-[10px] px-4 py-1 cursor-pointer">Shop New
+                            Arrivals</button>
+                        <button
+                            class="bg-[#FFFFFF] border-1 border-gray-300 rounded-[10px] px-4 py-1 cursor-pointer">Explore
+                            Collections</button>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hidden lg:block">
+                        <div class="flex justify-start gap-3 items-center">
+                            <div class="text-center">
+                                <h3 class="text-lg font-bold">10K+</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Happy Customers</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-lg font-bold">250+</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Premium Designs</p>
+                            </div>
+                            <div class="text-center">
+                                <h3 class="text-lg font-bold">100%</h3>
+                                <p class="text-xs sm:text-sm text-gray-500">Eco Materials</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Right -->
+                <div class="w-full lg:w-1/2">
+                    <img src="images/Hero Section/hero-right.png" alt="" class="mx-auto">
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="lg:hidden max-w-7xl mx-auto px-5 sm:px-8 pb-6 flex justify-between gap-3 items-center">
+                <div class="text-center">
+                    <h3 class="text-lg font-bold">10K+</h3>
+                    <p class="text-xs sm:text-sm text-gray-500">Happy Customers</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-bold">250+</h3>
+                    <p class="text-xs sm:text-sm text-gray-500">Premium Designs</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-bold">100%</h3>
+                    <p class="text-xs sm:text-sm text-gray-500">Eco Materials</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Section -->
+        <section class="w-full bg-[#FAFAFA] border-1">
+            <div
+                class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-10 pb-6 mb-4 flex flex-col gap-6 justify-center items-center">
+
+                <!-- Header -->
+                <div class=" flex flex-col items-center justify-center">
+                    <h2 class="text-[#E85D3A] font-bold text-[9px] sm:text-[10px] lg:text-[10px] px-2 mb-2">
+                        NEW COLLECTION 2026
+                    </h2>
+                    <h2 class="font-bold  text-sm sm:text-xl lg:text-2xl">Shop by Category</h2>
+                </div>
+
+                <!-- Category Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div>
+                        <img src="images/Categorysection/category-card-men.png" alt="Men">
+                    </div>
+                    <div>
+                        <img src="images/Categorysection/category-card-women.png" alt="Women">
+                    </div>
+                    <div>
+                        <img src="images/Categorysection/category-card-accessories.png" alt="Accessories">
+                    </div>
+                    <div>
+                        <img src="images/Categorysection/category-card-footwear.png" alt="Footwear">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="w-full">
+            <div
+                class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-10 pb-6 mb-4 flex flex-col gap-6 justify-center items-center">
+
+                <!-- Header -->
+                <div class="flex flex-col lg:flex-row w-full items-center gap-4 justify-between">
+                    <div class="flex flex-col justify-center items-center lg:items-start">
+                        <h2 class="text-[#E85D3A] font-bold text-[9px] sm:text-[10px] lg:text-[10px] mb-1">
+                            NEW COLLECTION 2026
+                        </h2>
+                        <h2 class="font-bold  text-sm sm:text-xl lg:text-2xl">Shop by Category</h2>
+                    </div>
+                    <div>
+                        <button
+                            class="border-1 border-gray-300 px-5 py-2 rounded-[15px] font-semibold text-sm cursor-pointer"><a
+                                href="">View All Products</a></button>
+                    </div>
+                </div>
+
+                <!-- Category Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div>
+                        <img src="images/Featured Product/product-card.png" alt="Men">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (1).png" alt="Women">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (2).png" alt="Accessories">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (3).png" alt="Footwear">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (4).png" alt="Footwear">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (5).png" alt="Footwear">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (6).png" alt="Footwear">
+                    </div>
+                    <div>
+                        <img src="images/Featured Product/product-card (7).png" alt="Footwear">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sale -->
+        <section class="w-full bg-[#EFEAE6]">
+            <div class="max-w-7xl mx-auto px-10 flex flex-col lg:flex-row">
+                <!-- Content Left -->
+                <div class="w-full lg:w-1/2 lg:flex flex-col justify-center">
+                    <p class="text-[#E85D3A] font-bold text-[12px] lg:text-[15px] w-fit">
+
+                        Limited Time Only
+                    </p>
+                    <h1 class="font-bold text-3xl lg:text-5xl mb-3">
+                        Mid-Season Sale — Up to 50% Off
+                    </h1>
+                    <p class="text-gray-600 lg:text-[20px] mb-2">
+                        Upgrade your wardrobe with timeless essentials at unprecedented prices. Explore clean designs,
+                        premium materials, and structured cuts crafted to last.
+                    </p>
+
+                    <div class="flex gap-5 mb-5">
+                        <button class="bg-[#E85D3A] text-white rounded-[10px] px-4 py-1 cursor-pointer">
+                            Shop the Sale
+                        </button>
+                    </div>
+                </div>
+                <!-- Content Right -->
+                <div class="w-full lg:w-1/2">
+                    <img src="images/Sale Section/promo-right.png" alt="Model" class="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="w-full">
+            <div
+                class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-6 pt-10 pb-6 mb-4 flex flex-col gap-6 justify-center items-center">
+                <!-- Header -->
+                <div class=" flex flex-col items-center justify-center">
+                    <h2 class="text-[#E85D3A] font-bold text-[9px] sm:text-[10px] lg:text-[10px] px-2 mb-2">
+                        MOST LOVED PIECES
+                    </h2>
+                    <h2 class="font-bold  text-sm sm:text-xl md:text-2xl lg:text-3xl">Trending Now</h2>
+                </div>
+
+                <!-- Trending Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div>
+                        <img src="images/Trending Section/product-card (8).png" alt="Relaxed Fit Blazer">
+                    </div>
+                    <div>
+                        <img src="images/Trending Section/product-card (9).png" alt="Midi Skirt">
+                    </div>
+                    <div>
+                        <img src="images/Trending Section/product-card (10).png" alt="Leather Boot">
+                    </div>
+                    <div>
+                        <img src="images/Trending Section/product-card (11).png" alt="Scarf">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Other Info -->
+        <section class="w-full">
+            <div class="max-w-7xl mx-auto  mb-5 flex justify-center items-center">
+
+                <!-- Info Grid -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  sm:gap-8 md:gap-8 lg:gap-10 mb-6">
+                    <div class="flex gap-4 items-center">
+                        <div class="bg-[#FDF2F0] rounded-[50%] h-[40px] w-[40px] text-center pt-[8px]">
+                            <i class="fa-regular fa-truck text-[#E85D3A]"></i>
+                        </div>
+                        <div class="text-sm">
+                            <h3 class="font-bold">Free Shipping</h3>
+                            <p class="text-[#949090]">On all orders over $99 standard</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="bg-[#FDF2F0] rounded-[50%] h-[40px] w-[40px] text-center pt-[8px]">
+                            <i class="fa-solid fa-shield text-[#E85D3A]"></i>
+                        </div>
+                        <div class="text-sm">
+                            <h3 class="font-bold">Secure Payment</h3>
+                            <p class="text-[#949090]">100% encrypted checkout transaction</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="bg-[#FDF2F0] rounded-[50%] h-[40px] w-[40px] text-center pt-[8px]">
+                            <i class="fa-solid fa-rotate-right text-[#E85D3A]"></i>
+                        </div>
+                        <div class="text-sm">
+                            <h3 class="font-bold">Easy Returns</h3>
+                            <p class="text-[#949090]">30-day hassle-free exchange policy</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <div class="bg-[#FDF2F0] rounded-[50%] h-[40px] w-[40px] text-center pt-[8px]">
+                            <i class="fa-solid fa-phone-volume text-[#E85D3A]"></i>
+
+                        </div>
+                        <div class="text-sm">
+                            <h3 class="font-bold">24/7 Support</h3>
+                            <p class="text-[#949090]">Dedicated friendly special assistance</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="w-full bg-[#F5EDE8]">
+            <div class="max-w-7xl mx-auto px-20 py-20 flex flex-col justify-center items-center">
+
+                <!-- Header -->
+                <div class="text-center flex flex-col justify-center items-center">
+                    <h2 class="text-[#E85D3A] font-bold text-[9px] sm:text-[10px] lg:text-[15px] px-2">
+                        NEWSLETTER
+                    </h2>
+                    <h2 class="font-bold  text-sm sm:text-xl md:text-2xl lg:text-3xl pb-2">Stay in the Loop</h2>
+                    <p class="text-sm text-[#949090]">
+                        Subscribe to receive exclusive access to early drops, mid-season sales, and thoughtful editorial content. No spam, unsubscribe anytime.
+                    </p>
+                </div>
+
+                <div class=" flex flex-row items-center justify-center mt-4">
+                    <input type="email" placeholder="Enter your email address" class="bg-white px-4 md:pr-30 py-2 rounded-l-[8px] border-none">
+                    <button class="bg-black text-[white] rounded-r-[8px] px-4 py-2">Subscribe</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8  lg:px-10 pt-10 pb-6">
+            <!-- Main Footer -->
+            <div class="flex flex-col lg:flex-row justify-between gap-10 lg:gap-16">
+                <!-- Brand Section -->
+                <div class="w-full lg:max-w-[300px] ">
+
+                    <div class="flex items-center gap-2 mb-3">
+                        <img src="images/foot/logo-mark.png" alt="">
+                        <h1 class="font-bold text-[20px] text-white">ShopNest</h1>
+                    </div>
+                    <p class="text-[14px] text-[#a3a3a3] leading-6">
+                        Crafting premium and sustainable clothing items engineered to
+                        fit into your active everyday life. Elevated minimal aesthetics.
+                    </p>
+                    <div class="mt-5 flex gap-6 text-white text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <!-- Footer Links -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10 lg:gap-x-16">
+                    <!-- Shop -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-semibold mb-2">Shop</h4>
+                        <a href="" class="text-gray-400 hover:text-white">Men</a>
+                        <a href="" class="text-gray-400 hover:text-white">Women</a>
+                        <a href="" class="text-gray-400 hover:text-white">Accessories</a>
+                        <a href="" class="text-gray-400 hover:text-white">New Arrivals</a>
+                        <a href="" class="text-gray-400 hover:text-white">Sale</a>
+                    </div>
+
+                    <!-- Help -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-semibold mb-2">Help</h4>
+                        <a href="" class="text-gray-400 hover:text-white">FAQ</a>
+                        <a href="" class="text-gray-400 hover:text-white">
+                            Shipping
+                        </a>
+                        <a href="" class="text-gray-400 hover:text-white">Returns</a>
+                        <a href="" class="text-gray-400 hover:text-white">Size Guide</a>
+                        <a href="" class="text-gray-400 hover:text-white">Contact</a>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="flex flex-col gap-3">
+                        <h4 class="text-white font-semibold mb-2" Company>Company</h4>
+                        <a href="" class="text-gray-400 hover:text-white">About Us</a>
+                        <a href="" class="text-gray-400 hover:text-white">Careers</a>
+                        <a href="" class="text-gray-400 hover:text-white">Press</a>
+                        <a href="">Sustainability</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Bottom Footer -->
+            <div
+                class="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-5">
+                <p class="text-[14px] text-gray-400 text-center sm:text-left">
+                    &copy; 2026 ShopNest. All rights reserved.
+                </p>
+                <div class="flex items-center gap-6 text-[18px] text-gray-400">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
